@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <title>Survey Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <main class="container">
+            <h1 id="title">Front-end Developer survey form</h1>
+            <p id="description">Thank you for taking the time to take our survey</p>
+            <form id="survey-form">
+                <!-- Name section -->
+                <div id="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter name" class="form-control" required>
+                </div>
+                <!-- email section -->
+                <div id="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="text" name="email" id="name" placeholder="Enter email" class="form-control" required>
+                </div>
+                <!-- Age section -->
+                <div id="form-group">
+                    <label id="number-label" for="age">Age</label>
+                    <input type="number" name="age" id="age" placeholder="Enter your age" class="form-control" required min="15" max="60" >
+                </div>
+                <!-- Select section current role -->
+                <div id="form-group">
+                    <p>Which option best describes your current role?</p>
+                    <select id="dropdown" name="role" class="form-control" required>
+                        <option disabled selected value>Select your current role</option>
+                        <option value="junior">Junior</option>
+                        <option value="junior">Mid-level</option>
+                        <option value="junior">Senior</option>
+                    </select>
+                    <!-- Job recommendation -->
+                    <!-- radio input -->
+                    <p>Would you recommend this job to your friend?</p>
+                    <label>
+                        <input name="job-recommendation" value="Yes" type="radio" class="radio-input">
+                        Yes
+                    </label>
+                    <label>
+                        <input name="job-recommendation" value="No" type="radio" class="radio-input">
+                        No
+                    </label>
+                
+                    <!-- Favourite thing at the job -->
+                    <p>What is your favourite thing about your job? <span>Check  all that apply.</span></p>
+                    <label>
+                        <input name="favourite-thing" value="Games times" type="checkbox" class="checkbox-input">
+                        Games times
+                    </label>
+                    <label>
+                        <input name="favourite-thing" value="Building Projects" type="checkbox" class="checkbox-input">
+                        Building Projects
+                    </label>
+                    <label>
+                        <input name="favourite-thing" value="Good Pay" type="checkbox" class="checkbox-input">
+                        Good Pay
+                    </label>
+                    <label>
+                        <input name="favourite-thing" value="Tech Advancement" type="checkbox" class="checkbox-input">
+                        Tech Advancement
+                    </label>
+                    <!-- Suggestion section -->
+                    <p>Write a suggestion for us on how to make the job better</p>
+                    <label>
+                        <textarea id="suggestion" class="text-input-area" name="job-suggestion"></textarea>
+                    </label>
+                    <button id="submit">Submit</button>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>
